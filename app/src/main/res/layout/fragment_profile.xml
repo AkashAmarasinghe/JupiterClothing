@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_bg"
+    tools:context=".fragment.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:layout_marginBottom="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:textSize="16dp"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/header_profile_pic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/circle_shape"
+            android:scaleType="centerCrop"
+            android:padding="10dp"
+            android:src="@drawable/person_24px" />
+
+        <TextView
+            android:id="@+id/edit_profile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textSize="15dp"
+            android:drawableEnd="@drawable/outline_build_24"
+            android:textColor="@color/accent_yellow"
+            android:drawableTint="@color/accent_yellow"/>
+        <TextView
+            android:id="@+id/profile_header_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Akash Amarasinghe"
+            android:textAlignment="center"
+            android:letterSpacing="0.14"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/text_primary"/>
+
+        <TextView
+            android:id="@+id/profile_header_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="akash@gmail.com"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/text_secondary"/>
+
+        <TextView
+            android:id="@+id/profile_header_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0717465956"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/text_secondary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/card_bg"
+                app:strokeColor="@android:color/transparent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/accent_yellow"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/outline_assignment_24"/>
+
+                    <LinearLayout
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:padding="13dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Order History"
+                            android:textColor="@color/text_primary"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_bold"
+                            android:layout_weight="1"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Track and manage your orders"
+                            android:textSize="12dp"
+                            android:textColor="@color/text_secondary"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:backgroundTint="@color/text_secondary"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="23dp"
+                        android:background="@drawable/outline_arrow_forward_ios_24"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/card_bg"
+                app:strokeColor="@android:color/transparent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/accent_yellow"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/outline_add_location_alt_24"/>
+
+                    <LinearLayout
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:padding="13dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Current Loacation"
+                            android:textColor="@color/text_primary"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_bold"
+                            android:layout_weight="1"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Visit us to Shop"
+                            android:textSize="12dp"
+                            android:textColor="@color/text_secondary"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:backgroundTint="@color/text_secondary"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="23dp"
+                        android:background="@drawable/outline_arrow_forward_ios_24"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/card_bg"
+                app:strokeColor="@android:color/transparent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/accent_yellow"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/outline_build_24"/>
+
+                    <LinearLayout
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:padding="13dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Account Setting"
+                            android:textColor="@color/text_primary"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_bold"
+                            android:layout_weight="1"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Change your Account Information"
+                            android:textSize="12dp"
+                            android:textColor="@color/text_secondary"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:backgroundTint="@color/text_secondary"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="23dp"
+                        android:background="@drawable/outline_arrow_forward_ios_24"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/card_bg"
+                app:strokeColor="@android:color/transparent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/accent_yellow"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/outline_add_moderator_24"/>
+
+                    <LinearLayout
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:padding="13dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Privacy and Security"
+                            android:textColor="@color/text_primary"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_bold"
+                            android:layout_weight="1"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Controll your data and privacy options"
+                            android:textSize="12dp"
+                            android:textColor="@color/text_secondary"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:backgroundTint="@color/text_secondary"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="23dp"
+                        android:background="@drawable/outline_arrow_forward_ios_24"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

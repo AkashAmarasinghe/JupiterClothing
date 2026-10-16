@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">jpclothing</string>
+    <string name="side_nav_menu_login">Login</string>
+    <string name="side_nav_menu_logout">Logout</string>
+    <string name="side_nav_menu_home">Home</string>
+    <string name="side_nav_menu_setting">Setting</string>
+    <string name="side_nav_menu_message">Message</string>
+    <string name="side_nav_menu_cart">Cart</string>
+    <string name="side_nav_menu_whishlist">Whishlist</string>
+    <string name="side_nav_menu_orders">Orders</string>
+    <string name="side_nav_menu_profile">Profile</string>
+    <string name="side_nav_menu_homes">Home</string>
+    <string name="bottom_nav_menu_category">Category</string>
+    <string name="bottom_nav_menu_home">Home</string>
+    <string name="bottom_nav_menu_cart">Cart</string>
+    <string name="bottom_nav_menu_profile">Profile</string>
+    <string name="bottom_nav_whishlist">Whishlist</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bottom_nav_menu_orders">Orders</string>
+    <string name="wichlist">bottom_nav_Wichlist</string>
+    <string name="bottom_nav_menu_whichlist">Whichlist</string>
+</resources>

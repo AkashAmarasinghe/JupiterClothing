@@ -1,0 +1,40 @@
+
+# Android Studio
+*.iml
+.idea/
+.DS_Store
+/captures
+
+# Gradle
+.gradle/
+**/build/
+
+# Local Configuration
+local.properties
+**/local.properties
+
+# Native Build
+.externalNativeBuild/
+.cxx/
+
+# Logs and Temporary Files
+*.log
+*.tmp
+
+# APK and App Bundles
+*.apk
+*.aab
+
+# Signing Keys
+*.jks
+*.keystore
+*.p12
+keystore.properties
+
+# Environment Files
+.env
+.env.*
+
+# Firebase Admin Private Keys
+serviceAccountKey.json
+*-firebase-adminsdk-*.json

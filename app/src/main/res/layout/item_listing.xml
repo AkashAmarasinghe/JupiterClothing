@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_gravity="center"
+        android:background="@drawable/card_border_color"
+        app:cardBackgroundColor="@color/card_bg"
+        app:strokeColor="@android:color/transparent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/card_border_color"
+            app:cardBackgroundColor="@color/black_bg"
+            app:strokeWidth="0.5dp"
+            app:strokeColor="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/listing_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img1" />
+
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/listing_name"
+                android:layout_width="match_parent"
+
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:layout_height="wrap_content"
+                android:text="Item"
+                android:textAlignment="center"
+                android:textColor="@color/text_primary"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <RatingBar
+                android:id="@+id/product_details_rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:outlineAmbientShadowColor="#FFC107"
+                android:outlineSpotShadowColor="#FFC107"
+                android:progressTint="@color/text_secondary"
+                android:rating="4.5" />
+            
+            <TextView
+                android:id="@+id/listing_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:text="LKR. 1500.00"
+                android:textAlignment="center"
+                android:textColor="@color/accent_yellow"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"/>
+        </LinearLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

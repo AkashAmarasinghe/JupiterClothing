@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_bg"
+    tools:context=".fragment.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="7dp"-->
+<!--            android:fontFamily="@font/poppins_medium"-->
+<!--            android:letterSpacing="0.2"-->
+<!--            android:text="CATEGORIES"-->
+<!--            android:textColor="@color/text_secondary"-->
+<!--            android:textStyle="bold" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_category_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="@color/card_bg"
+            android:background="@drawable/coustom_input_search"
+            android:drawableStart="@drawable/search_24px"
+            android:hint="Serach Here.."
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:paddingStart="10dp"
+            app:actionViewClass="androidx.appcompat.widget.SearchView"
+            android:textSize="13dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_vedio_view_home"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="8dp"
+            app:strokeColor="@color/text_secondary"
+            app:strokeWidth="1dp">
+
+
+            <lk.akash.jupclothing.util.ZoomableVideoView
+                android:id="@+id/home_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+            <!--            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator-->
+            <!--                android:id="@+id/dotsIndicator"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                app:dotsColor="@color/text_secondary"-->
+            <!--                app:dotsSize="8dp"-->
+            <!--                -->
+            <!--                app:dotsSpacing="4dp"-->
+            <!--                app:selectedDotColor="@color/accent_yellow" />-->
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/poppins_medium"
+                android:letterSpacing="0.2"
+                android:text="FEATURED PRODUCTS"
+                android:textColor="@color/text_secondary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="View All"
+                android:textAlignment="textEnd"
+                android:textColor="@color/accent_yellow"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_product_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="630dp"
+            app:fastScrollHorizontalTrackDrawable="@layout/item_listing"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

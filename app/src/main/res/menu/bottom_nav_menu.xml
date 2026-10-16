@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/bottomNavCategory"
+        android:icon="@drawable/view_list_24px"
+        android:title="@string/bottom_nav_menu_category"
+        android:visible="true"
+        />
+
+    <item
+        android:id="@+id/bottomNavWhislist"
+android:title="@string/bottom_nav_menu_whichlist"
+        android:visible="false"
+        android:icon="@drawable/outline_border_all_24"/>
+
+
+    <item
+        android:id="@+id/bottomNavHome"
+        android:icon="@drawable/home_24px"
+        android:title="@string/bottom_nav_menu_home"
+        android:visible="true"
+        android:enabled="true"
+       />
+
+    <item
+        android:id="@+id/bottomNavCart"
+        android:visible="false"
+        android:icon="@drawable/shopping_cart_24px"
+        android:title="@string/bottom_nav_menu_cart"
+        />
+
+    <item
+        android:id="@+id/bottomNavProfile"
+        android:visible="false"
+        android:icon="@drawable/account_box_24px"
+        android:title="@string/bottom_nav_menu_profile"
+        />
+</menu>

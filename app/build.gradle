@@ -1,0 +1,71 @@
+plugins {
+    alias(libs.plugins.android.application)
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'lk.akash.jupclothing'
+    compileSdk {
+        version = release(36)
+    }
+
+    defaultConfig {
+        applicationId "lk.akash.jupclothing"
+        minSdk 28
+        targetSdk 36
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation libs.glide
+
+    compileOnly(libs.lombok)
+    annotationProcessor(libs.lombok)
+
+    implementation platform(libs.firebase.bom)
+    implementation libs.firebase.analytics
+    implementation(libs.google.firebase.auth)
+    implementation(libs.firebase.firestore)
+    implementation("com.google.firebase:firebase-storage")
+    implementation(libs.dotsindicator)
+    implementation libs.lottie
+    implementation(libs.media3.exoplayer)
+    implementation(libs.media3.exoplayer.dash)
+    implementation(libs.media3.ui)
+    implementation libs.play.services.maps
+        // PayHere SDK
+        implementation libs.payhere.android.sdk
+
+        // Required companion libraries (if not already added)
+        implementation libs.gson.v2101
+        implementation libs.appcompat.v161
+
+}

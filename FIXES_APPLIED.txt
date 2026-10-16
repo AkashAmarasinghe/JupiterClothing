@@ -1,0 +1,14 @@
+JClothing targeted Firebase/data fixes
+
+- Category navigation now passes document id + stored category value + category name.
+- Listing category matching supports old/new Firestore schemas, DocumentReference categories, maps, names and ids.
+- Product/category image mapping supports String, List and Map based URL fields and common field-name variants.
+- Wishlist collection corrected to `wishlist` (matching the existing Firestore database); legacy `whishlist` items are still read/removed for compatibility.
+- Wishlist add now reports Firebase errors instead of silently failing.
+- Wishlist/cart product lookups work whether productId is a Firestore document id or a stored field.
+- Cart quantity changes are persisted to Firestore; cart remove uses the known document id directly.
+- Product attribute rendering no longer crashes on null values or invalid color strings.
+- Existing UI/layout/design files were not redesigned.
+
+Firebase requirement:
+Publish the included firestore.rules in Firebase Console > Firestore Database > Rules.

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Success Icon -->
+        <ImageView
+            android:id="@+id/imgSuccess"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:src="@android:drawable/checkbox_on_background"
+            android:tint="#19D39A" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Order Placed!"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Your style journey has begun."
+            android:textColor="#8C92A5"
+            android:textSize="14sp" />
+
+        <!-- Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="#050505"
+            android:padding="24dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:elevation="4dp">
+
+            <!-- Order ID -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDER ID"
+                android:textColor="@color/accent_yellow"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvOrderId"
+                android:layout_marginTop="10dp"
+                android:text="#JUP-98240-X"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <!-- Delivery -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="ESTIMATED DELIVERY"
+                android:textColor="@color/accent_yellow"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/approveDate"
+                android:layout_marginTop="10dp"
+                android:text="Oct 24, 2023"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Track Order Button -->
+
+
+        <!-- Back to Shop -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="14dp"
+            android:text="BACK TO SHOP"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:backgroundTint="@color/text_primary" />
+
+    </LinearLayout>
+
+</ScrollView>

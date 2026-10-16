@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:background="@drawable/card_border_color"
+        app:cardBackgroundColor="@color/card_bg"
+        app:strokeColor="@android:color/transparent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/card_border_color"
+            app:cardBackgroundColor="@color/black_bg"
+            app:strokeWidth="0.5dp"
+            app:strokeColor="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/homecategory_img"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:src="@drawable/img1" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/homecategory_name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/poppins_bold"
+            android:text="TOYS"
+android:layout_marginBottom="-4dp"
+            android:textAlignment="center"
+            android:textColor="@color/accent_yellow"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

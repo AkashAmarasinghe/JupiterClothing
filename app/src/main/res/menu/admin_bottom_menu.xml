@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/adminBottomUser"
+        android:icon="@drawable/view_list_24px"
+        android:title="user"
+        />
+
+    <item
+        android:id="@+id/adminBottomProduct"
+        android:title="product"
+        android:icon="@drawable/outline_border_all_24"/>
+
+
+    <item
+        android:id="@+id/adminBottomDashboard"
+        android:icon="@drawable/home_24px"
+        android:title="dashboard"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/adminBottomCategory"
+        android:icon="@drawable/shopping_cart_24px"
+        android:title="Category"
+        />
+
+    <item
+        android:id="@+id/adminBottomHistry"
+        android:icon="@drawable/account_box_24px"
+        android:title="history"
+        />
+</menu>

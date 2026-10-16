@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="12dp"
+    android:orientation="horizontal"
+    android:background="@drawable/toast_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/toastText"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:drawableStart="@drawable/round_auto_fix_high_24"
+        android:text="Message"
+        android:layout_marginTop="2dp"
+        android:drawableTint="@color/accent_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

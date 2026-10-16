@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/card_bg"
+    tools:context=".fragment.ProfileUpdateFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="32dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Update Profile"
+                android:textColor="@color/text_primary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Manage your photo and address"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+
+            <!-- Profile photo preview -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:clipToOutline="true"
+                app:cardBackgroundColor="@color/card_bg"
+                app:cardCornerRadius="56dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/text_primary"
+                app:strokeWidth="2dp">
+
+                <ImageView
+                    android:id="@+id/update_profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Profile photo"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_myplaces" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Change profile photo button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/update_photo_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:minHeight="48dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Change Photo"
+                android:textAllCaps="false"
+                android:textColor="@color/md_theme_scrim"
+                android:textSize="13sp"
+                android:backgroundTint="@color/text_primary"
+                app:cornerRadius="18dp"
+                app:icon="@android:drawable/ic_menu_camera"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                app:iconTint="@color/md_theme_scrim" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Choose a photo for your profile"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Full Name"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/update_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/coustom_input_search"
+                android:enabled="false"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Enter Full Name"
+                android:inputType="textPersonName"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Email"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/update_email"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/coustom_input_search"
+                android:enabled="false"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Enter Valid Email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Address"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/update_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/coustom_input_search"
+                android:enabled="true"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Enter Your Address"
+                android:inputType="textPostalAddress|textMultiLine"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:textSize="14sp"
+                android:minHeight="64dp"
+                android:gravity="top|start"
+                android:minLines="2"
+                android:maxLines="4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Mobile Number"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/update_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/coustom_input_search"
+                android:enabled="false"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Enter Mobile Number"
+                android:inputType="phone"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/update_profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:minHeight="52dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Save Updates"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/md_theme_scrim"
+                android:backgroundTint="@color/text_primary"
+                app:cornerRadius="14dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sign_up_sign_in_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="52dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/md_theme_primary_mediumContrast"
+                android:backgroundTint="@color/md_theme_scrim"
+                app:cornerRadius="14dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_notification_card"
+    android:gravity="top"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <!-- Yellow Bell -->
+    <FrameLayout
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:background="@drawable/bg_notification_item_icon">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_notifications_24"
+            android:contentDescription="Notification" />
+
+    </FrameLayout>
+
+    <!-- Text -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/notificationItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/notificationItemMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="#D5D5D8"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/notificationItemTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/accent_yellow"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Red unread dot -->
+    <View
+        android:id="@+id/notificationItemUnreadDot"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_notification_badge_red"
+        android:visibility="gone" />
+
+</LinearLayout>

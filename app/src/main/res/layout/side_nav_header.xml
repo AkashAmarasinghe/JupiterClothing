@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/headerbg"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/header_profile_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"
+        android:background="@drawable/circle_shape"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person_24px" />
+
+    <TextView
+        android:id="@+id/headreUserName"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="You're not logged in"
+        android:textAlignment="textStart"
+        android:textColor="@color/black_bg"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/headerUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black_bg"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="1dp" />
+</LinearLayout>

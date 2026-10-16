@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/paymentRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:paddingStart="24dp"
+    android:paddingTop="20dp"
+    android:paddingEnd="24dp"
+    android:paddingBottom="24dp">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_media_previous"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Back" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Payment Details."
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:id="@+id/txtCardNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="CARD NUMBER"
+        android:textColor="#7A6F72"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/etCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
+        android:hint="0000 0000 0000 0000"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#9EA4B1"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <LinearLayout
+        android:id="@+id/cardNumberContainer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="-56dp"
+        android:background="@drawable/bg_payment_field"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/rowExpiryCvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:id="@+id/txtExpiryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXPIRY DATE"
+                android:textColor="#7A6F72"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" />
+
+            <EditText
+                android:id="@+id/etExpiryDate"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_payment_field"
+                android:hint="MM/YY"
+                android:inputType="datetime"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#9EA4B1"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/txtCvvLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CVV"
+                android:textColor="#7A6F72"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium" />
+
+            <EditText
+                android:id="@+id/etCvv"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_payment_field"
+                android:hint="***"
+                android:inputType="numberPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#9EA4B1"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPayNow"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="26dp"
+        android:text="PAY $170.00 NOW"
+        android:backgroundTint="@color/accent_yellow"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+</LinearLayout>

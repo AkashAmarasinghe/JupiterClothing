@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/card_bg"
+    app:strokeColor="@android:color/transparent"
+    android:outlineSpotShadowColor="@color/md_theme_scrim"
+    android:outlineAmbientShadowColor="@color/md_theme_scrim"
+    android:layout_margin="8dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:padding="10dp"
+        android:layout_gravity="center_vertical">
+        
+        <ImageView
+            android:id="@+id/item_whislist_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:baseline="5dp"
+            />
+        
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_whislist_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This pattern is widelyv tores where users ofte tores where users often"
+                android:ellipsize="end"
+                android:textStyle="bold"
+
+                android:textColor="@color/text_primary"
+                android:textSize="15dp"
+                android:maxLines="3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_whislist_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="LKR 1000.00"
+                    android:textColor="@color/accent_yellow"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_cart_remove"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/text_secondary"
+                android:background="@drawable/close"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

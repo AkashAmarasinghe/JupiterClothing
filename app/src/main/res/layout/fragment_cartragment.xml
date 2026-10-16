@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/card_bg"
+    tools:context=".fragment.Cartragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_cart_item"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/black_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/card_bg"
+                android:padding="8dp"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/cart_text_total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"
+                    android:layout_weight="1"
+                    android:textAlignment="textEnd"
+                    android:textSize="20dp"
+                    android:text="LKR 2000.00"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cart_btn_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proceed To Checkout"
+                android:textStyle="bold"
+                app:backgroundTint="@color/accent_yellow"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/black_bg"/>
+
+    </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
